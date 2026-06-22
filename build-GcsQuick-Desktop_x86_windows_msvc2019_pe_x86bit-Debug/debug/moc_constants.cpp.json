@@ -1,0 +1,51 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "ThemeType"
+                }
+            ],
+            "className": "ThemeType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "DarkMode",
+                    "values": [
+                        "Light",
+                        "Dark"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "ThemeType"
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "TreeViewType"
+                }
+            ],
+            "className": "TreeViewType",
+            "enums": [
+                {
+                    "isClass": false,
+                    "isFlag": false,
+                    "name": "SelectionMode",
+                    "values": [
+                        "None",
+                        "Single",
+                        "Multiple"
+                    ]
+                }
+            ],
+            "namespace": true,
+            "qualifiedClassName": "TreeViewType"
+        }
+    ],
+    "inputFile": "constants.h",
+    "outputRevision": 67
+}

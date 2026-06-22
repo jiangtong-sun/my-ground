@@ -1,0 +1,49 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "GcsColors"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "GcsColors",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_SFont",
+                    "name": "SFont",
+                    "notify": "SFontChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "AccentColor*",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GcsColors",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "SFontChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcscolors.h",
+    "outputRevision": 67
+}

@@ -1,0 +1,117 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "AccentColor"
+                }
+            ],
+            "className": "AccentColor",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_darkest",
+                    "name": "darkest",
+                    "notify": "darkestChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_darker",
+                    "name": "darker",
+                    "notify": "darkerChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_dark",
+                    "name": "dark",
+                    "notify": "darkChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_normal",
+                    "name": "normal",
+                    "notify": "normalChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_light",
+                    "name": "light",
+                    "notify": "lightChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "AccentColor",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "darkestChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkerChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "normalChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "lightChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "accentcolor.h",
+    "outputRevision": 67
+}

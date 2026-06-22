@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(QuickDemo VERSION 0.1 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/Bin/${CMAKE_BUILD_TYPE})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
+link_directories(${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+link_directories(${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/GcsQuick)
+
+find_package(Qt5 REQUIRED COMPONENTS Core Quick QuickControls2)
+
+#set(QML_IMPORT_PATH ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/GcsQuick)
+
+add_executable(QuickDemo
+    main.cpp
+    test.qrc
+)
+
+set_target_properties(QuickDemo PROPERTIES
+    WIN32_EXECUTABLE TRUE
+)
+
+target_link_libraries(QuickDemo
+    PRIVATE
+        Qt5::Quick
+        "GcsQuick.lib"
+)
+

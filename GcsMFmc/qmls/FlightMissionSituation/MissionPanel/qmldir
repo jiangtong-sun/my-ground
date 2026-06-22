@@ -1,0 +1,4 @@
+﻿Module MissionPanel
+
+FmpPlanDisplay 1.0 FmpPlanDisplay.qml
+FmpFlightDisplay 1.0 FmpFlightDisplay.qml

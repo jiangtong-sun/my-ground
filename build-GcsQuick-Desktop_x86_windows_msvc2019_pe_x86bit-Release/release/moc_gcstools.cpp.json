@@ -1,0 +1,245 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "GcsTools"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "GcsTools",
+            "methods": [
+                {
+                    "access": "public",
+                    "name": "qtMajor",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "name": "qtMinor",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "name": "isMacos",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "isLinux",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "isWin",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "clipText",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "uuid",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "fileName",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "readFile",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "setQuitOnLastWindowClosed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "shape",
+                            "type": "Qt::CursorShape"
+                        }
+                    ],
+                    "name": "setOverrideCursor",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "restoreOverrideCursor",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "p",
+                            "type": "QObject*"
+                        }
+                    ],
+                    "name": "deleteLater",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "getVirtualGeometry",
+                    "returnType": "QRect"
+                },
+                {
+                    "access": "public",
+                    "name": "getApplicationDirPath",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "getUrlByFilePath",
+                    "returnType": "QUrl"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QColor"
+                        },
+                        {
+                            "name": "alpha",
+                            "type": "qreal"
+                        }
+                    ],
+                    "name": "withOpacity",
+                    "returnType": "QColor"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "md5",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "sha256",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "toBase64",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "fromBase64",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "dirPath",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "removeDir",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "removeFile",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "currentTimestamp",
+                    "returnType": "qint64"
+                },
+                {
+                    "access": "public",
+                    "name": "cursorPos",
+                    "returnType": "QPoint"
+                },
+                {
+                    "access": "public",
+                    "name": "windowIcon",
+                    "returnType": "QIcon"
+                },
+                {
+                    "access": "public",
+                    "name": "isSoftware",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "cursorScreenIndex",
+                    "returnType": "int"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "GcsTools",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcstools.h",
+    "outputRevision": 67
+}

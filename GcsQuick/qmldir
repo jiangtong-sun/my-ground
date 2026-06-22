@@ -1,0 +1,41 @@
+﻿module GcsQuick
+plugin GcsQuick
+
+typeinfo plugins.qmltypes
+
+ControlBackground 1.0 ControlBackground.qml
+FocusRectangle 1.0 FocusRectangle.qml
+GcsButton 1.0 GcsButton.qml
+GcsControl 1.0 GcsControl.qml
+GcsDivider 1.0 GcsDivider.qml
+GcsTableView 1.0 GcsTableView.qml
+GcsFilledButton 1.0 GcsFilledButton.qml
+GcsGroupBox 1.0 GcsGroupBox.qml
+GcsHorizText 1.0 GcsHorizText.qml
+GcsHorizImage 1.0 GcsHorizImage.qml
+GcsIcon 1.0 GcsIcon.qml
+GcsComboBox 1.0 GcsComboBox.qml
+GcsIconButton 1.0 GcsIconButton.qml
+GcsLoader 1.0 GcsLoader.qml
+GcsObject 1.0 GcsObject.qml
+GcsScrollBar 1.0 GcsScrollBar.qml
+GcsScrollIndicator 1.0 GcsScrollIndicator.qml
+GcsShadow 1.0 GcsShadow.qml
+GcsText 1.0 GcsText.qml
+GcsTextBox 1.0 GcsTextBox.qml
+GcsTextButton 1.0 GcsTextButton.qml
+GcsTextFont 1.0 GcsTextFont.qml
+GcsToggleButton 1.0 GcsToggleButton.qml
+GcsToggleSwitch 1.0 GcsToggleSwitch.qml
+GcsTooltip 1.0 GcsTooltip.qml
+GcsTrapezium 1.0 GcsTrapezium.qml
+GcsVertiText 1.0 GcsVertiText.qml
+GcsVertShow 1.0 GcsVertShow.qml
+VertLineText 1.0 VertLineText.qml
+GcsRadioButton 1.0 GcsRadioButton.qml
+GcsMenuItem 1.0 GcsMenuItem.qml
+GcsSimpleMenu 1.0 GcsSimpleMenu.qml
+GcsNoticeButton 1.0 GcsNoticeButton.qml
+GcsDragElement 1.0 GcsDragElement.qml
+GcsCheckBox 1.0 GcsCheckBox.qml
+ToastComponent 1.0 ToastComponent.qml

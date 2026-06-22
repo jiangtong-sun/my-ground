@@ -1,0 +1,121 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "TextStyle"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "TextStyle",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_fontSize",
+                    "name": "fontSize",
+                    "notify": "fontSizeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_Caption",
+                    "name": "Caption",
+                    "notify": "CaptionChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_Body",
+                    "name": "Body",
+                    "notify": "BodyChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_BodySmall",
+                    "name": "BodySmall",
+                    "notify": "BodySmallChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_family",
+                    "name": "family",
+                    "notify": "familyChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "TextStyle",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "fontSizeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "CaptionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "BodyChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "BodySmallChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "familyChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "textstyle.h",
+    "outputRevision": 67
+}

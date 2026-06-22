@@ -1,0 +1,463 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "GcsTheme"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "GcsTheme",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "name": "dark",
+                    "notify": "darkChanged",
+                    "read": "dark",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_red",
+                    "name": "red",
+                    "notify": "redChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_orange",
+                    "name": "orange",
+                    "notify": "orangeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_yellow",
+                    "name": "yellow",
+                    "notify": "yellowChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_green",
+                    "name": "green",
+                    "notify": "greenChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_blue",
+                    "name": "blue",
+                    "notify": "blueChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_Transparent",
+                    "name": "Transparent",
+                    "notify": "TransparentChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_Black",
+                    "name": "Black",
+                    "notify": "BlackChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_White",
+                    "name": "White",
+                    "notify": "WhiteChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_Gray",
+                    "name": "Gray",
+                    "notify": "GrayChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_primaryColor",
+                    "name": "primaryColor",
+                    "notify": "primaryColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_setvalueColor",
+                    "name": "setvalueColor",
+                    "notify": "setvalueColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_backgroundColor",
+                    "name": "backgroundColor",
+                    "notify": "backgroundColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_dividerColor",
+                    "name": "dividerColor",
+                    "notify": "dividerColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_windowBorderColor",
+                    "name": "windowBorderColor",
+                    "notify": "windowBorderColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_fontPrimaryColor",
+                    "name": "fontPrimaryColor",
+                    "notify": "fontPrimaryColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_frameColor",
+                    "name": "frameColor",
+                    "notify": "frameColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_itemNormalColor",
+                    "name": "itemNormalColor",
+                    "notify": "itemNormalColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_itemEnableColor",
+                    "name": "itemEnableColor",
+                    "notify": "itemEnableColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_itemWarnColor",
+                    "name": "itemWarnColor",
+                    "notify": "itemWarnColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_itemPressColor",
+                    "name": "itemPressColor",
+                    "notify": "itemPressColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_itemGrayColor",
+                    "name": "itemGrayColor",
+                    "notify": "itemGrayColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_iconfront",
+                    "name": "iconfront",
+                    "notify": "iconfrontChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_darkMode",
+                    "name": "darkMode",
+                    "notify": "darkModeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GcsTheme",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "redChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "orangeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "yellowChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "greenChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "blueChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "TransparentChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "BlackChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "WhiteChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "GrayChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "primaryColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "setvalueColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "backgroundColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "dividerColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "windowBorderColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "fontPrimaryColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "frameColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemNormalColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemEnableColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemWarnColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemPressColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "itemGrayColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "iconfrontChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "darkChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcstheme.h",
+    "outputRevision": 67
+}

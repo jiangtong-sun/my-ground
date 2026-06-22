@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "GcsQuickPlugin",
+            "object": true,
+            "qualifiedClassName": "GcsQuickPlugin",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQmlExtensionPlugin"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcsquick_plugin.h",
+    "outputRevision": 67
+}

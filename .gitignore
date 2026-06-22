@@ -1,0 +1,5 @@
+Bin/
+build/
+GcsQuick/GcsQuick.pro.user
+*.user
+.vscode/

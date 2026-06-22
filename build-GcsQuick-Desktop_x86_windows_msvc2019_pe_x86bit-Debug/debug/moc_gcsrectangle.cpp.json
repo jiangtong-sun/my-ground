@@ -1,0 +1,45 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "GcsRectangle"
+                }
+            ],
+            "className": "GcsRectangle",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_color",
+                    "name": "color",
+                    "notify": "colorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GcsRectangle",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "colorChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "gcsrectangle.h",
+    "outputRevision": 67
+}

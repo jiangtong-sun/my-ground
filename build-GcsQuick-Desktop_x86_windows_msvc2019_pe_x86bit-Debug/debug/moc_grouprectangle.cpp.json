@@ -1,0 +1,171 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "GroupRectangle"
+                }
+            ],
+            "className": "GroupRectangle",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_textColor",
+                    "name": "textColor",
+                    "notify": "textColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_penColor",
+                    "name": "penColor",
+                    "notify": "penColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_leftRightOff",
+                    "name": "leftRightOff",
+                    "notify": "leftRightOffChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_leftMargin",
+                    "name": "leftMargin",
+                    "notify": "leftMarginChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_rightMargin",
+                    "name": "rightMargin",
+                    "notify": "rightMarginChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_bottomMargin",
+                    "name": "bottomMargin",
+                    "notify": "bottomMarginChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_topMargin",
+                    "name": "topMargin",
+                    "notify": "topMarginChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "member": "_text",
+                    "name": "text",
+                    "notify": "textChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "GroupRectangle",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "textColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "penColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "leftRightOffChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "leftMarginChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "rightMarginChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "bottomMarginChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "topMarginChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "textChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "grouprectangle.h",
+    "outputRevision": 67
+}

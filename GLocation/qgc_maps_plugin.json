@@ -1,0 +1,10 @@
+{
+    "Keys": ["gcsmap"],
+    "Provider": "cdmcoc",
+    "Version": 101,
+    "Experimental": false,
+    "Features": [
+        "OnlineMappingFeature",
+        "OfflineMappingFeature"
+    ]
+}
