@@ -419,6 +419,7 @@ bool ParseProtoFile::protoParse(QVector<std::shared_ptr<WarnConfig>> &warns,
                                 const QString &dataFile, QDateTime dateTime) {
 
     // verify the input file is can been opened by xlsx lib
+    //创建栈对象xlsxRead，调用 QXlsx::Document 构造函数，传入文件路径，尝试加载 xlsx
     QXlsx::Document xlsxRead(dataFile);
     if (!xlsxRead.load()) {
         return false;

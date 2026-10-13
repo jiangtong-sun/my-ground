@@ -154,14 +154,24 @@ void VehicleSession::addFeedbackCallback(FeedbackCallback callback) {
     feedbackHandlers.append(callback);
 }
 
+/**
+ * 创建协议解码器管理器
+ * @param id 协议ID
+ * @return 返回创建的FactDecoderMgr指针，如果失败则返回nullptr
+ */
 FactDecoderMgr *VehicleSession::createProtoDecoder(uint8_t id) {
+    // 创建一个FactDecoderMgr的共享指针，传入协议ID和当前时间
     std::shared_ptr<FactDecoderMgr> protoManger(new FactDecoderMgr(id, currDatetime));
+    // 尝试加载Excel协议文件
     if (!protoManger->loadExcelProto(metaDataFile)) {
+        // 如果加载失败，记录错误信息
         COMMON_INFO("load excel proto {} failed", metaDataFile.toStdString().c_str());
         return nullptr;
     }
 
+    // 将创建的协议管理器插入到map容器中，以id为键
     veh_proto_manager.insert(id, protoManger);
+    // 返回原始指针（由shared_ptr管理）
     return protoManger.get();
 }
 
@@ -1466,7 +1476,7 @@ void VehicleSession::loadVehicleEnv(int count, const QString &routefile) {
         std::shared_ptr<FlightVechicle> cur(new FlightVechicle());
         //设置飞机ID为i
         cur->setVehicleIdx(i);
-        //创建一个名为decoder的智能指针变量，指向一个动态分配的FactDecoderMgr对象
+        //创建一个名为decoder的智能指针变量，指向一个动态分配的FactDecoderMgr对象，
         FactDecoderMgr *decoder = createProtoDecoder(i);
         assert(decoder != nullptr);
         cur->loadExcelWarn(metaWarnFile, [&](int frame) { return decoder->protoframe(frame); });

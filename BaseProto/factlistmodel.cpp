@@ -10,11 +10,18 @@ FactListModel::FactListModel(QObject *parent) : QAbstractListModel(parent) {}
 
 FactListModel::~FactListModel() {}
 
+/**
+ * @brief FactListModel::get 获取指定索引处的对象
+ * @param index 要获取的对象的索引位置
+ * @return 返回指定索引处的QObject指针，如果索引无效则返回nullptr
+ */
 QObject *FactListModel::get(int index){
+    // 检查索引是否有效，如果小于0或大于等于列表大小则返回nullptr
     if (index < 0 || index >= _objectList.count()) {
         return nullptr;
     }
 
+    // 返回指定索引处的对象
     return _objectList[index];
 }
 
@@ -147,18 +154,27 @@ void FactListModel::insert(int i, QObject *object) {
     insertRows(i, 1);
 }
 
+/**
+ * @brief 向模型中追加对象列表
+ * @param objects 要追加的对象哈希表，键为uint32_t类型的ID，值为QObject指针
+ */
 void FactListModel::append(const QHash<uint32_t, QObject *> &objects) {
-    int j = 0;
+    int j = 0;  // 用于记录插入位置的索引
+    // 如果传入的对象哈希表为空，则直接返回
     if (objects.count() <= 0) {
         return;
     }
 
+    // 遍历传入的对象哈希表
     for (auto iter = objects.begin(); iter != objects.end(); ++iter) {
+        // 设置对象的所有权为C++端，防止被QML垃圾回收
         QQmlEngine::setObjectOwnership(iter.value(), QQmlEngine::CppOwnership);
+        // 将对象插入到内部对象列表中
         _objectList.insert(j, iter.value());
-        j++;
+        j++;  // 递增插入位置索引
     }
 
+    // 在模型的开头插入新行，行数等于追加的对象数量
     insertRows(0, objects.count());
 }
 
@@ -177,10 +193,15 @@ void FactListModel::insert(int i, const QList<QObject *> &objects) {
     insertRows(i, objects.count());
 }
 
+/**
+ * @brief FactListModel::append 在对象列表末尾添加一个新对象
+ * @param object 要添加的QObject指针
+ * @return 返回新添加对象在列表中的索引位置
+ */
 int FactListModel::append(QObject *object) {
-    int cur = _objectList.count();
-    insert(_objectList.count(), object);
-    return cur;
+    int cur = _objectList.count();  // 获取当前列表中的对象数量
+    insert(_objectList.count(), object);  // 在列表末尾插入新对象
+    return cur;  // 返回新添加对象的索引位置
 }
 
 void FactListModel::append(const QList<QObject *> &objects) {

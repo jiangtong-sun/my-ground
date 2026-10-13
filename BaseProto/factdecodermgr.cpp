@@ -524,10 +524,22 @@ FactTableModel *FactDecoderMgr::unittestProto(int chl, int type, const uint8_t *
     return nullptr;
 }
 
+/**
+ * @brief 从Excel文件加载协议数据
+ * @param dataFile Excel文件路径
+ * @return 加载是否成功
+ */
 bool FactDecoderMgr::loadExcelProto(const QString &dataFile) {
+    // 调用protoParse方法解析Excel文件中的协议数据
+    // warnings: 用于存储解析过程中的警告信息
+    // veh_proto_set: 存储解析后的协议数据集合
+    // dataFile: 要解析的Excel文件路径
+    // file_datatime: 记录文件数据的时间信息
     bool rtn = proto_parser.protoParse(warnings, veh_proto_set, dataFile, file_datatime);
+    // 遍历veh_proto_set中的协议数据，将其frame_type添加到frame_type_set中
     for (auto x = veh_proto_set.begin(); x != veh_proto_set.end(); ++x) {
         frame_type_set.append(x.value().get());
     }
+    // 返回解析结果
     return rtn;
 }

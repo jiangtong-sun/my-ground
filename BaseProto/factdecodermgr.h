@@ -26,7 +26,7 @@
 
 /**
  * @brief 遥测数据统计回调函数类型定义
- * @param veh 车辆ID（车辆唯一标识）
+ * @param veh 飞机ID（飞机唯一标识）
  * @param datas 本次解析的数据量（字节数/条目数）
  * @param frame 协议帧号（对应协议定义中的帧类型）
  * @note 用于协议解析完成后，回调外部逻辑统计遥测数据（如上报数据量、监控解析效率）
@@ -36,7 +36,7 @@ using TelemetrySummary = std::function<void(int veh, int datas, int frame)>;
 
 /**
  * @class FactDecoderMgr
- * @brief 车辆协议解析核心管理类
+ * @brief 飞机协议解析核心管理类
  * @details 负责协议文件加载、原始二进制数据解析、协议包构建、解码、数据存储、
  *          告警解析、数据更新通知、单元测试等核心功能，具备以下特性：
  *          1. 不可拷贝：继承Uncopyable，避免多线程下浅拷贝导致的资源冲突
@@ -47,7 +47,7 @@ using TelemetrySummary = std::function<void(int veh, int datas, int frame)>;
  * @author （可补充作者信息）
  * @date （可补充日期）
  */
-//TBD BASEPROTO_EXPORT是什么？？class是什么？？
+//定义一个名为FactDecoderMgr的类，继承自Uncopyable，使用BASEPROTO_EXPORT宏导出
 class BASEPROTO_EXPORT FactDecoderMgr : public Uncopyable {
 
   public:
@@ -55,7 +55,7 @@ class BASEPROTO_EXPORT FactDecoderMgr : public Uncopyable {
     /// \brief FactDecoderMgr
     /// \param idx 车辆ID
     /// \param tm 协议输出文件时间
-    ///TBD构造函数和析构函数的作用？
+    ///~析构函数用于释放构造阶段申请的资源：delete 堆内存、关闭文件、释放句柄，防止内存泄漏
     FactDecoderMgr(uint8_t idx, QDateTime tm);
 
     ~FactDecoderMgr();
