@@ -694,9 +694,16 @@ void FlightVechicle::setVehicleAddr(int val) { _vehicleAddr = val; }
 
 void FlightVechicle::setCurrNavMode(int val) { _attitudeModel.setNavigationMode(val); }
 
+/**
+ * 设置飞行器索引并更新名称
+ * @param val 要设置的索引值
+ */
 void FlightVechicle::setVehicleIdx(int val) {
+    // 设置飞行器索引值
     _vehicleIdx = val;
+    // 将索引值转换为字符串并设置为飞行器名称
     _name = QString::number(val);
+    // 发射飞行器索引变化的信号
     emit vehicleIdxChanged();
 }
 

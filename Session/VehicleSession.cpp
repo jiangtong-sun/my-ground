@@ -1462,14 +1462,15 @@ void VehicleSession::switchVehicel(int idx) {
 void VehicleSession::loadVehicleEnv(int count, const QString &routefile) {
 
     for (int i = 0; i < count && configCtrl; i++) {
+        //创建一个名为cur的智能指针变量，指向一个动态分配的FlightVechicle对象
         std::shared_ptr<FlightVechicle> cur(new FlightVechicle());
-        // set an "i" variable to vehicle, makes an index that vehicle
-        cur->setVehicleIdx(i); //
-        // create decoder manager object for vehicle,
-        // and set an index "i" for decoder manager
+        //设置飞机ID为i
+        cur->setVehicleIdx(i);
+        //创建一个名为decoder的智能指针变量，指向一个动态分配的FactDecoderMgr对象
         FactDecoderMgr *decoder = createProtoDecoder(i);
         assert(decoder != nullptr);
         cur->loadExcelWarn(metaWarnFile, [&](int frame) { return decoder->protoframe(frame); });
+        //nullptr是空指针常量
         if (cur != nullptr && decoder != nullptr) {
             decoder->initSummary([=](int veh, int datas, int frame) {
                 if (cur != nullptr) {
@@ -1478,11 +1479,8 @@ void VehicleSession::loadVehicleEnv(int count, const QString &routefile) {
                     COMMON_WARN("unable found vehicle");
                 }
             });
-            // init feedback table column header
             cur->feedback()->initColumnHeader();
-            // load display config for vehicle
             cur->reloadDisplay(decoder, configCtrl->displayConfig());
-            // initialize the current vehicle variable
             if (_currentVehicle == nullptr) {
                 _currentVehicle = cur.get();
             }

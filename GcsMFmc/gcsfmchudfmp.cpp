@@ -181,11 +181,11 @@ int main(int argc, char *argv[]) {
     const QUrl url(QStringLiteral("qrc:///qmls/FlightMonitorControl.qml"));
 
     // 18. 初始化车辆环境、MFmc管理器、启用保活机制、配置服务
-    //TBD
+    //初始化飞机信息，如飞机ID，TBD
     GcsMFmcManager::instance()->loadVehicleEnv(missionFiles.count(), "");
     //TBD
     GcsMFmcManager::instance()->initlialize(missionFiles);
-    //TBD
+    //启用上行心跳，但是实际这块并没有开关效果TBD
     GcsMFmcManager::instance()->enableUpKeepalive();
     //TBD
     GcsMFmcManager::instance()->configService();

@@ -10,12 +10,15 @@ GcsMFmcManager::GcsMFmcManager(QObject *parent) : VehicleSession(&configControlE
 GcsMFmcManager::~GcsMFmcManager() {}
 
 void GcsMFmcManager::initlialize(const QStringList &file) {
+    // 1. 注册发送回调：当需要发送数据时，调用任务管理器处理
     addSendingCallback([=](Channel *readwrite, MissionMessageQueue &queue) {
         if (readwrite != nullptr) {
             _missionMgr.missionProcess(readwrite, queue);
         }
     });
+    // 2. 注册处理回调：收到数据时，调用任务管理器处理任务消息
     addProcessCallback([=](PtrMessage code) { return _missionMgr.processMissionMsg(code); });
+    // 3. 注册反馈回调：收到反馈时，验证控制指令
     addFeedbackCallback([=](int ctl, int adj) { return _missionMgr.feedbackVerify(ctl, adj); });
 
     _missionMgr.initializeMission(this);
